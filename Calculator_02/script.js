@@ -4,18 +4,21 @@ let buttons = document.querySelectorAll("button");
 let string = " ";
 
 buttons.forEach((element) => {
-    element.addEventListener("click", (b) => {
-        if (b.target.innerText === "=") {
+    element.addEventListener("click", (e) => {
+        if (e.target.innerText === "=") {
             string = String(eval(string));
             inputBox.value = string;
-        } else if (b.target.innerText === "AC") {
+        } 
+        else if (e.target.innerText === "AC") {
             string = "";
             inputBox.value = string;
-        } else if (b.target.innerText === "DEL") {
+        } 
+        else if (e.target.innerText === "DEL") {
             string = string.substring(0, string.length - 1);
             inputBox.value = string;
-        } else {
-            string += b.target.innerText;
+        } 
+        else {
+            string += e.target.innerText;
             inputBox.value = string;
         }
     });
