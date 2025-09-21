@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(33, 33, 34);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+   background-color: rgb(255, 255, 255, 0.05);
+   border-radius: 50%;
+   padding: 1vw;
+   outline: 1vw solid rgba(62, 18, 2, 0.429);
+   outline-offset: 0.5vw;
+   box-shadow: 0 0 100px #000;
+}
+
+.clock{
+   height: 32vw;
+   width: 32vw;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
