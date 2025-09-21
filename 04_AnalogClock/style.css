@@ -10,25 +10,72 @@ body {
     min-height: 100vh;
     width: 100%;
     background-color: rgb(33, 33, 34);
-    color: #fff;
+    color: #e8e5e5;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container {
-   background-color: rgb(255, 255, 255, 0.05);
-   border-radius: 50%;
-   padding: 1vw;
-   outline: 1vw solid rgba(62, 18, 2, 0.429);
-   outline-offset: 0.5vw;
-   box-shadow: 0 0 100px #000;
+    background-color: rgba(3, 2, 23, 0.952);
+    border-radius: 50%;
+    padding: 0.6vw;
+    border: 2px solid lightseagreen;
+    outline: 0.6vw solid rgba(15, 14, 14, 5);
+    outline-offset: 0.3vw;
+    box-shadow: 0vw 0vw 100px #111;
+    position: relative;
 }
 
-.clock{
-   height: 32vw;
-   width: 32vw;
-   display: flex;
+.clock {
+    height: 32vw;
+    width: 32vw;
+    display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    border: 6px solid #555;
+    outline-offset: -0.5vw;
+    outline: 0vw solid rgb(196, 37, 69);
+    /* box-shadow: 0 0 20px rgb(198, 56, 4); */
+}
+
+.clock span {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 1vw;
+    text-align: center;
+    padding: 1vw;
+}
+
+.clock span b {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 1.6vw;
+    font-weight: 700;
+}
+
+.clock::before {
+    content: "";
+    position: absolute;
+    height: 1vw;
+    width: 1vw;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.hand {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hand i {
+    position: absolute;
+    height: var(--h);
+    width: var(--w);
+    background-color: var(--clr);
+    border-radius: 10px;
 }
