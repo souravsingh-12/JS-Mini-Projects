@@ -20,7 +20,7 @@ body {
     background-color: rgba(3, 2, 23, 0.952);
     border-radius: 50%;
     padding: 0.6vw;
-    border: 2px solid lightseagreen;
+    border: 4px solid lightseagreen;
     outline: 0.6vw solid rgba(15, 14, 14, 5);
     outline-offset: 0.3vw;
     box-shadow: 0vw 0vw 100px #111;
@@ -37,7 +37,7 @@ body {
     border: 6px solid #555;
     outline-offset: -0.5vw;
     outline: 0vw solid rgb(196, 37, 69);
-    /* box-shadow: 0 0 20px rgb(198, 56, 4); */
+    box-shadow: 0 0 20px rgb(35, 46, 90);
 }
 
 .clock span {
@@ -61,7 +61,7 @@ body {
     height: 1vw;
     width: 1vw;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #999;
     z-index: 2;
 }
 
